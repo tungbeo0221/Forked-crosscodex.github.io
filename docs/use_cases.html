@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Use Case Documents</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h2 id="title-use-casessubtitle-use-case-document-with-activity-diagramsauthor-group-namedate-2024-02-10">title: Use cases
+subtitle: Use case document with activity diagrams
+author: Group Name
+date: 2024-02-10</h2>
+<h3 id="use-case-documents">Use Case Documents</h3>
+<h4 id="use-case-uc-1-sign-up">Use Case UC-1: Sign Up</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-1: Sign Up</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User registers for a new account.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to create a new account.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>User successfully registers for an account.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User provides required registration information. <br> 2. User clicks on the &quot;Sign Up&quot; button. <br> 3. System creates a new account for the user. <br> 4. System displays a success message.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User provides incomplete or invalid information. <br> 1. User receives an error message prompting to correct the information. <br> <strong>Exception #2:</strong> User tries to sign up with an existing email or username. <br> 1. User receives an error message indicating the email or username is already in use.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/JP2nRiCm34HtVSKXa_CByT2idODyW2hHBb5PSadAXV--ab2qNOW7yEvuu5tDYzKjkG7kzbGIx58EZgGG-gmi51kih2RUk6HmNefiW-SVHqWSFXHjQU-4ouFNZET-mLirwofUCBt-sS2AKBOzaH5yZZXyulXoxUwCwIIzEk3sEDLeGn3orjfuPFg23w7KR6XXurXjz-T_wiYw9tzskTOGI1LR6twbsL5ImfJBI1_5XGBnqSCpIAHb_ee1jR8xof4ND_3UkF_g6m00"><h4 id="use-case-uc-2-sign-in">Use Case UC-2: Sign In</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-2: Sign In</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User logs into their account.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to log in.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User has already registered for an account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>User successfully logs into their account.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User enters their username/email and password. <br> 2. User clicks on the &quot;Sign In&quot; button. <br> 3. System verifies the credentials. <br> 4. System logs the user into their account. <br> 5. System redirects the user to their profile page.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User enters incorrect username/email or password. <br> 1. User receives an error message indicating incorrect credentials. <br> <strong>Exception #2:</strong> User tries to sign in with a deactivated or suspended account. <br> 1. User receives an error message indicating the account is deactivated or suspended.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/JP0zRiCm38LtdU8XapDrZuS6wDGvw05KcNQ9ogH1qYro-yf2K6Hx8DxF1ruziiM-rjH5kdmu6KY2p15Vn8QzNIIlz49hveei4xRi_gisZGz_gLo-7If71ASRBu9tEU5pZr0P4yyOteocrikvEh8HYffHYTVpaH4CT_9p0YwtkmUjgBfqW3uFbj07JYv5TudnoTkQ-UXw2lpRDzEPApNaXSP4rGc3Q5_gw2r7_4EDIK1cQbZ9lPi13zqIoSHpwlBQzF6hFm00"><h4 id="use-case-uc-3-view-profile">Use Case UC-3: View Profile</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-3: View Profile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User views their own profile information.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User navigates to the profile page.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>User successfully views their profile.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the profile page.   <br> 2. System retrieves and displays the user's profile information.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/FOsn3O0m30JxJE6E7Q1X1yG0bcB0Kc97ja5YUm85rN_nzpTxeCLPI_fA6bSd0y6BTmno28Ku29hfngKdxZIbSRazg89H6DFLPoWPCdihUFi7dFrcy9zZsTGg1gjCtQGjpIJvrJu0"><h4 id="use-case-uc-4-create-post">Use Case UC-4: Create Post</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-4: Create Post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User creates a new post to share with others.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to create a new post.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>New post is successfully created and visible to others.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the &quot;Create Post&quot; section. <br> 2. User enters post content and attaches media if desired. <br> 3. User clicks on the &quot;Post&quot; button. <br> 4. System saves the post and displays it to the user and others.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User tries to post without entering any content. <br> 1. User receives an error message prompting to enter post content. <br> <strong>Exception #2:</strong> User encounters a technical issue while posting. <br> 1. User receives an error message indicating the issue and is prompted to try again later.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/JOv12i8m54JtESKiwnNQXJs281uWf5CDf4dv_rV9xKs32tSFPdWpiveNExRaEhZneHG4eJSgF38_s8lQvEAAuTO8KN_v0Zr2eEfwf5Il5zYB6KEbNXmmtgiQDonHz-IhdkcVZac98PTUxQF2mFW-LpCeKWHRS_idfrPHAxjZNkBgEiwDpzTV"><h4 id="use-case-uc-5-search">Use Case UC-5: Search</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-5: Search</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User searches for other users or posts based on specific keywords or criteria.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to perform a search.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>Search results matching the query are displayed to the user.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User enters keywords or criteria into the search bar. <br> 2. User submits the search query. <br> 3. System retrieves and displays relevant search results.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/POxB2SCm44JlgcBhI2xk8QG04GzuGPRjdL50tUU3iG--3RptO0OgXzfSqd-asvC8GnM2HkHuJROrHB_loAlBiq3JXDtuiaUdC5j0uNZZQ0DiHJoDqRcMtAy2jQnfG1r_Ppu0"><h4 id="use-case-uc-6-view-notifications">Use Case UC-6: View Notifications</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-6: View Notifications</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User views notifications related to their account activity, such as new followers, likes, comments, or messages.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User accesses the notifications section.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>User successfully views their notifications.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the notifications section. <br> 2. System retrieves and displays the user's notifications.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/LOsn3O0m30JxJE6E7KB33eW1B6B04ZXH_22nFO6Exek_ky715UUnXs-4EBbKChvqPOWJCc4JiWnTT6PeDYgyIX_YU3lae2geAbVxiYLAwcNdsp_gRAxEVx3tBPHB6CJIMtq0"><h4 id="use-case-uc-7-follow-user">Use Case UC-7: Follow User</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-7: Follow User</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User follows another user to receive updates on their activity.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to follow another user.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>User successfully follows the selected user.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the profile of the user they want to follow. <br> 2. User clicks on the &quot;Follow&quot; button.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/BOxH3O0m24J_EmLpw8yx60TeMenDQ345OznUiFuT7E-EHJHslIg5JuHf4-mWI9XKG0y4FhLm0sNOcOXlY8rjt-6oo_a74hUzz3g8c9mmQtr4iKBCUHXEU93h4MOp5T7PslaC2xRihxm0"><h4 id="use-case-uc-8-unfollow-user">Use Case UC-8: Unfollow User</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-8: Unfollow User</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User unfollows another user, stopping updates on their activity.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to unfollow another user.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>User successfully unfollows the selected user.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the profile of the user they want to unfollow. <br> 2. User clicks on the &quot;Unfollow&quot; button.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/BOx13SCm24Nlde8vcajsg3g0vMBLae48SA9kNnpt1hp_qD_Di_gWdkuXFLw62eOTYnlu1q4ERyBW0eEhz2uNP9OW2YEosryfmhKfBIUNwGHwVisHG97anCMc15M5xcrzZ4jlvbkKa2FjoE_Pw0S0"><h4 id="use-case-uc-9-update-profile">Use Case UC-9: Update Profile</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-9: Update Profile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User updates their profile information, such as name, bio, profile picture, or settings.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to edit their profile.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>User successfully updates their profile.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the profile settings or edit profile section. <br> 2. User makes desired changes to their profile information. <br> 3. User saves the changes.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while saving changes. <br> 1. User receives an error message indicating the issue. <br> 2. User retries the save operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/JP1BRiCm34JtEWLtTQuGBngWHoXw0CAY72BwWQG2-FQLLJlDHfZ5cwUHRceerb9q8xZhZv90nYUlQAHW1UnEKAK4ZWJasJYlK76b-O0JFZgut36lhmBBgy8v54beNFBPK7pkPFSUhTbnWEdhKA3GG3neMnPI3It6xVEoDp9C6-d50Lo_DpLAqAh_MzfrhTi_zBnwVgCyQusuTVafXTIFyGoAIZ3bCgnZeD12l6_432HIv1y6K2lLKVOSt8YtdlSF_0K0"><h4 id="use-case-uc-10-view-post">Use Case UC-10: View Post</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-10: View Post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User views a post along with its associated comments, reactions, and other details.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User clicks on a post from the feed or search results.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>User successfully views the selected post.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User clicks on a post from the feed or search results.<br> 2. System retrieves and displays the selected post along with its details.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/FOtB2S0W40NlLh5rwCKUGWfOS4c4-C5zKUm-COVSXWSppokuuKwN-S3ONQLHvXuFXYYX44wXMXGB9WtEM6kFCfonsrH8eYPeKVehS0uKejQBf_wgU-kb6YyvhAi7"><h4 id="use-case-uc-11-edit-post">Use Case UC-11: Edit Post</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-11: Edit Post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User edits one of their existing posts.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to edit a post they previously created.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>Post is successfully edited and updated with the new content.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the post they want to edit. <br> 2. User clicks on the &quot;Edit&quot; option. <br> 3. User makes desired changes to the post content. <br> 4. User saves the changes.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while saving changes. <br> 1. User receives an error message indicating the issue. <br> 2. User retries the save operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/NP11RWCX34NtdCBAQdA5pAAHgfwWwW4iy4oiC0PXJofkNw2Jjke6VU7dPyDL3OljMtGZkCk7KW711wzef609x4QGareF5JvHhDzIO9iFt4VsTuKaWpszjT89KZPEyaGsl3TR8EL20VmDPVrdzqcCvCUf-EX0gnxmx7Y1wVNen4832Q2xzwIwx37MbtFl49WgwTa1NDwh6csmv_3zccFO_ASMM7F4sfHF5Mpjm9LcHr499ad3DTOgv8dxPYX0fQJo2mEefUn80Yzkn6lB_Mk_0000"><h4 id="use-case-uc-12-delete-post">Use Case UC-12: Delete Post</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-12: Delete Post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User deletes one of their existing posts.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to delete a post they previously created.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>Post is successfully deleted and removed from the system.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the post they want to delete. <br> 2. User clicks on the &quot;Delete&quot; option. <br> 3. User confirms the deletion.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while deleting the post. <br> 1. User receives an error message indicating the issue. <br> 2. User retries the delete operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/JP1BZWCX34JtdAAKLUSAoI9Pp056Yd80H9i43U0MTcV4xQUnyfaDAknN9TjdKTzqBTcPS8UhK4FrZtJpIW9bw9smiEWG7R--wgZEb4df-3I4dCAFWAlHkozhxi2B9gvlY6jChOWnvhTcYfY-HtwIP-eCMKCWaRZct4_xOQYOEidU0OTB5wM2HeKV99_vOkDYFp7W-8-TaopPTu5_HQDiZxzj6r0MmbJPictGHe7IYFOLr1gt3mo8ykAepYawa-TDZ_lz0G00"><h4 id="use-case-uc-13-comment-on-post">Use Case UC-13: Comment on Post</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-13: Comment on Post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User adds a comment to an existing post.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to comment on a post.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>Comment is successfully added to the selected post.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the post they want to comment on. <br> 2. User types their comment in the designated comment section. <br> 3. User clicks on the &quot;Post Comment&quot; button.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while posting the comment. <br> 1. User receives an error message indicating the issue. <br> 2. User retries the comment operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/LP11RWCX34NtdCBBoHKoYqRg4QeUm0LFOWdC27ioulO1cZJJtRFvds_xeeR5jXJT07V-LYeWUESh6YbO1hiHh5cjGuKTnNhNvvIeOPRvQMeL5UqgBd_FBCF_AfMyyTkYsqzYqwDaThp0zFcowrDZ51fvJwhB5cFzE7MJm5H9JmxW_5NLA066yE-xumBpGHTOruZrLxkj0Nl0s79dkuskqFuUYg8IJ997rfYza2U-jnEX09MI2wGs75wfnwZbrP44Njp0I-D-v0S0"><h4 id="use-case-uc-14-edit-comment">Use Case UC-14: Edit Comment</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-14: Edit Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User edits one of their existing comments on a post.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to edit a comment they previously made.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>Comment is successfully edited and updated with the new content.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the comment they want to edit. <br> 2. User clicks on the &quot;Edit&quot; option. <br> 3. User makes desired changes to the comment content. <br> 4. User saves the changes.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while saving changes. <br> 1. User receives an error message indicating the issue. <br> 2. User retries the save operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/LP51RiCm30JlUWMHa_E5vD00HLzGz064H3j49D8GwGJ-VMt5gPkBi127kmlfOexLfv934-7qOrH1yCu3EXcuWby9HZM7gEB8mZAqkwYbaFYgPtZWgXGeiPyt5wDCqUqTVaTYvdWpK6dGuMiP7K17PvKNKl2sz4XaN2b1lA8CUw_DzYyHxxJbFRbpu1wwpsq9ApKaWKqnaba_vJn_7DSDWMucEmQ0q_TiJWMcCJsVu7_EFaviOyPvSNsvGLaE7EWSA1j19zhiMhDAaNWjXm9KgzOT1Z3NCP0axaEJbqMlN_8B"><h4 id="use-case-uc-15-delete-comment">Use Case UC-15: Delete Comment</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-15: Delete Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User deletes one of their existing comments on a post.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to delete a comment they previously made.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>Comment is successfully deleted and removed from the post.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the comment they want to delete. <br> 2. User clicks on the &quot;Delete&quot; option. <br> 3. User confirms the deletion.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while deleting the comment. <br> 1. User receives an error message indicating the issue. <br> 2. User retries the delete operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/NP31RSCm34Nldk8Z9sU5vD00xGP51n1asY4gaOP8fz3sjLKdRNeHliJ71r8Nyr1yoQbheJjz61L8kF4Kd0oky2jXLdD45GyiB5DxYvepYM-vuYjiIJ5G8gVpxh7r5jsUyVzGJ1m_3IeDExoruW4wEwiy89MHI_vHjVvMv17zwovcsyK3R8cHpCObfVfot7e4VIKxTi3flPfJHg6iDtgURIoQ7_kU_y03svn2DOIx6tazmhHkGSa8lMYJjs4BHUBD7GHKYfPV633NkICPUEnQlAnv-_zl"><h4 id="use-case-uc-16-react-to-post">Use Case UC-16: React to Post</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-16: React to Post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User reacts to a post by adding a like, dislike, or other emotive response.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to react to a post.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>User's reaction is successfully added to the selected post.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User clicks on the reaction button (e.g., like, dislike) associated with the post.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while adding the reaction. <br> 1. User receives an error message indicating the issue.                                       <br> 2. User retries the reaction operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/NP1HRiCW44J_ESL-sbAK0yGVpHbQzG0Kniwg62ns7Skt3z2ailBtO6VO6QwYDkiw1zF0NBu5cQAzysGLGff8Rw0bYLROQRDHwss6THM6fqKGu5IQkiquHUfmdiud2loB4tcM2ls_O_sP-Sqn61wf-tpvMPugXI_a74J6DOJzew-sic27z8ReyhMBOYRh_Lk4Gu7X85mN_zVlLMvZlRLJn7Q8Wo2WBgQsfCNESE1xiTf8o3bbcaigEw4-BveMW-XvD0slXUldFW00"><h4 id="use-case-uc-17-remove-reaction">Use Case UC-17: Remove Reaction</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-17: Remove Reaction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User removes their reaction (like, dislike, etc.) from a post.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to remove their reaction from a post.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account and has previously reacted to the post.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>User's reaction is successfully removed from the post.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User clicks on the reaction button (e.g., like, dislike) associated with the post to remove their reaction.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while removing the reaction. <br> 1. User receives an error message indicating the issue.                                      <br> 2. User retries the removal operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/LL1RSiGm2FltAVZCNc7pqJr3Eps0wv0iKnioWBUJspVs9dtyQOI443Vpg5vB3Xs4wxkX0iS7BT7Hm0NyZh2AEIHXZyJ4I-D8GJ4c9-7niALCwTD0k7lEANnKzyR9JXLv892FWMOONay5sJ6Qm6fAQ3RNdBUNIrl4C6nebm1mVTlCiHnQ-vyogvIVMyS_whfEpofdZo_okrG_xC_OtogO3M5WwO6zbc92QdcH0LL5eUmNnWLRYhci0NcYENHust5xvpS0"><h4 id="use-case-uc-18-send-message">Use Case UC-18: Send Message</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-18: Send Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User sends a direct message to another user.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to send a message to another user.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>Message is successfully sent to the recipient.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the messaging section or user's profile. <br> 2. User selects the recipient. <br> 3. User composes the message. <br> 4. User clicks on the &quot;Send&quot; button.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while sending the message. <br> 1. User receives an error message indicating the issue. <br> 2. User retries the send operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/RP0zRiCm38LtdU8XIvmhn4DpWKv13w3Ab4jKbWIH3k3RXtOJfmMw4UBtVgYBg6ywJybjWpj_23LaV-FHAmcqGBy84uduaVC8eQ1SCah3REXHK5k9dAX_Q8MI8RB96WMkJ5aHZNyPxN0eKor2ykykSVWMMDQwF5mf3mTypgebzuuZklSV7YmMQXaoXs1FSKvfUJkjgenk8Javu7nTH6bQmU5FslF2lMh_YnvOQlABm3_DNoKf2Q7BPNFV2fi5ySsEyHdKcbsymu1egSx2ERfjlDYyVliT"><h4 id="use-case-uc-19-view-messages">Use Case UC-19: View Messages</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-19: View Messages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User views their messages, including conversations with other users.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User accesses the messaging section.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>User successfully views their messages.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the messaging section. <br> 2. System retrieves and displays the user's messages.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/BOqn3eCm40Hxl-Aw_04Q_X3b0QTuvPo4pyXx8F5x34gtnSxCmj0UUrtJCzBq8Rgu7bOqG8acyODKa5hCYn3ViEPpcjud0rKweXkEyLNFaetRgYSVQX-k5_ymE8z6sz82ptVm0W00"><h4 id="use-case-uc-20-edit-message">Use Case UC-20: Edit Message</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-20: Edit Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User edits a previously sent message.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to edit a message they previously sent.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account and has previously sent the message.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>Message is successfully edited and updated with the new content.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the conversation containing the message they want to edit. <br> 2. User selects the message to edit. <br> 3. User makes desired changes to the message content. <br> 4. User saves the changes.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while saving changes. <br> 1. User receives an error message indicating the issue. <br> 2. User retries the save operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/LP1HZeCm34J_Smf_qYkKZwsqHrZj0QnaeD461yM65RSlIQbe_oRop1ixDpKkjap9DU6kluf2mciSsQ1acUmEybbM56MBMUh3E4gKiSqcgFA8gZVwPx4QGeZM7pH5WZVzD7zQ9lxRom8q5WJoTvRnB7zbQY_anFAA9_JmzouEr7qVOIveba2wUByZXYMbxUjI4qBT1hqueklFfeQ9bZayxptx-hTnY3edtdRgYtQwa1JKIMwujbc1HwpBiH1AoUKTgPPd1mbnS4tUTbt__m40"><h4 id="use-case-uc-21-delete-message">Use Case UC-21: Delete Message</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-21: Delete Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User deletes a previously sent message.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to delete a message they previously sent.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account and has previously sent the message.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>Message is successfully deleted and removed from the conversation.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to the conversation containing the message they want to delete. <br> 2. User selects the message to delete. <br> 3. User confirms the deletion.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while deleting the message. <br> 1. User receives an error message indicating the issue. <br> 2. User retries the delete operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/PP11RiGm24NtFWNBp1KcYyu5kgfw0EJW5Cd68o2fSllQRaRjjBiF_CUtkPcZ-bPo629StuqK17TUqSd0A_W7GQooanewL-c58mlBEcQ5p72bhW_uHF4EBPJ9QJxtMQkYsxFzhwcjJQpbspL6BMmEd61wFHcsard0jXXRDsqv7o-NpWXC1zab05pV3dCge5JgJi-nIMlvzwNv5xImtJCU1lZ8UB1pe6m4azGHCXwj58bx1WgGQjKVCu1vlGUIXLCOyjPqF_KN"><h4 id="use-case-uc-22-delete-notification">Use Case UC-22: Delete Notification</h4>
+<table>
+<thead>
+<tr>
+<th>ID &amp; Name:</th>
+<th>UC-22: Delete Notification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary Actor:</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Description:</td>
+<td>User deletes a notification from their notification list.</td>
+</tr>
+<tr>
+<td>Trigger:</td>
+<td>User decides to delete a notification.</td>
+</tr>
+<tr>
+<td>Pre-conditions:</td>
+<td>User is logged into their account.</td>
+</tr>
+<tr>
+<td>Post-conditions:</td>
+<td>Notification is successfully removed from the user's notification list.</td>
+</tr>
+<tr>
+<td>Normal Flow:</td>
+<td>1. User navigates to their notification list. <br> 2. User selects the notification they want to delete. <br> 3. User confirms the deletion.</td>
+</tr>
+<tr>
+<td>Alternative Flows:</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>Exceptions:</td>
+<td><strong>Exception #1:</strong> User encounters errors while deleting the notification. <br> 1. User receives an error message indicating the issue. <br> 2. User retries the delete operation.</td>
+</tr>
+<tr>
+<td>Priority:</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/RP11Ra8n34JtEOMNdol0efoW6yG1h7o7MafYPFjJvVPD0eWYiOb6zZpFA4TpLDzA3bE4_Tb8eUADB-Xau0B-Gzn7ufmuehDKo6n-U7YDCaMtONitzK63Nwm-ZgpTvVHaejJ4MkxGN7NW43Z1ylt_1Di3NC6s6CaiRJcthzq0AooDR1S0zgTcJWMKYjpeGvMaKkRqNln5h6pNZCq0dm5G-eENNfMo4InLPiAihHI9Hm1M85NHbnd0NAw1wiefJ7diUlph7m00"><h3 id="use-case-diagram">Use Case Diagram</h3>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/bPJ1JiCm38RlUGfh9pXi3u2cQj80YGDeeYhtA7KxIsao9Iv3GhmxQTVHDhHZz1Rx--q_iTMDP-cuhZJK7a59Zq9ZmS0M79LxXfmSAYPhX5Hi7MGUdH1DJ9fI8onIgqXgUCQSv08-1OIlWM2vX9kKIWFPuNOY-cIYw1lX4NRE5gGnIcqTIaROMSznAPHExQSglLYcWfHilFi8UBHQssDxZZAPAUBSs1YiLad03dbhw1oyW_MQZD9rZaboKWqzdqIdEksvuV63qUJ-p0-oBVsG4m_eg7fCtwF6dsvNy5jRLMWOh9dN_69wNrtg7xBEu2LXxF4LmyercpZhC28wLMNV4TfK6FrLdT8mYB31tijoUfXZe9zc5_BpNNgYVxrBdQP4tTlzAHkl_4WxJCK5liGcN2_y0yGt">
+            
+            
+        </body>
+        </html>

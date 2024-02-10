@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>1&period; Authentication</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h2 id="title-description-of-featuressubtitle-preliminary-feature-documentationauthor-studentsdate-2024-02-10">title: Description of Features
+subtitle: Preliminary feature documentation
+author: Students
+date: 2024-02-10</h2>
+<h2 id="1-authentication">1. Authentication</h2>
+<p>The authentication feature enables users to securely sign up and sign in to the social media platform. Frontend components would include user registration forms for signing up (<code>/signup</code>) and login forms (<code>/signin</code>). Upon successful authentication, users receive an authorization token.</p>
+<h2 id="2-user-management">2. User Management</h2>
+<p>Users can manage their profiles seamlessly through the frontend interface. They can view profile information and posts on their profile page (<code>/profile/{userId}</code>). Additionally, they can update their profile information through an editable profile form (<code>/profile/edit</code>) and delete their account with a delete account option (<code>/profile/delete</code>).</p>
+<h2 id="3-post-management">3. Post Management</h2>
+<p>This feature empowers users to create, view, edit, and delete posts directly from the frontend. Users can compose new posts using a post creation form (<code>/post/create</code>) and view posts and their comments on the feed or post detail page (<code>/feed</code>, <code>/post/{postId}</code>). Editing options are available through an edit post button (<code>/post/{postId}/edit</code>) and delete functionality via a delete post option (<code>/post/{postId}/delete</code>).</p>
+<h2 id="4-commenting">4. Commenting</h2>
+<p>Users can engage with posts by leaving comments using the frontend comment form displayed on post detail pages (<code>/post/{postId}</code>). They can also edit their comments by clicking on an edit button next to their comments and delete them using a delete option.</p>
+<h2 id="5-search">5. Search</h2>
+<p>The search feature provides users with a search bar on the frontend interface (<code>/search</code>) to discover other users and posts based on their query. Search results are displayed dynamically as users type their query.</p>
+<h2 id="6-reaction">6. Reaction</h2>
+<p>Users can express their reactions to posts directly from the frontend interface. Each post may have reaction buttons (like, love, laugh, etc.) allowing users to react with a single click. They can also remove their reactions by clicking on the respective reaction button again.</p>
+<h2 id="7-messaging">7. Messaging</h2>
+<p>Messaging functionality is seamlessly integrated into the frontend interface, allowing users to communicate with each other. Users can send messages through a messaging interface (<code>/messages</code>) where they can view their conversations, compose new messages, and delete messages.</p>
+<h2 id="8-notification">8. Notification</h2>
+<p>Users receive real-time notifications about relevant activities through the frontend interface. Notifications are displayed in a notification panel (<code>/notifications</code>), providing users with updates on new followers, likes, comments, and more. Users can dismiss notifications individually or clear all notifications.</p>
+<h2 id="9-following">9. Following</h2>
+<p>Users can follow other users directly from their profiles or from search results. A follow button is displayed next to user profiles or within search results, allowing users to follow with a single click. Unfollowing can be done in a similar manner.</p>
+
+            
+            
+        </body>
+        </html>

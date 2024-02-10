@@ -34,17 +34,20 @@ date: 2024-02-10
 
 6. **Reaction**
     - `POST /api/reactions`: React to a post as logged-in user. (Requires authorization header)
-    - `DELETE /api/reactions/{reactionId}`: Remove a reaction from a post as logged-in user. (Requires authorization header)
+    - `DELETE /api/reactions/{reactionId}`: Remove a reaction from a post as logged-in user. (Requires authorization
+      header)
 
 7. **Messaging**
     - `POST /api/messages`: Send a message as logged-in user. (Requires authorization header)
     - `GET /api/messages`: Retrieve messages as logged-in user. (Requires authorization header)
     - `PUT /api/messages/{messageId}`: Edit a message by the logged-in user. (Requires authorization header)
-    - `DELETE /api/messages/{messageId}`: Delete a message by the logged-in user or for the logged-in user. (Requires authorization header)
+    - `DELETE /api/messages/{messageId}`: Delete a message by the logged-in user or for the logged-in user. (Requires
+      authorization header)
 
 8. **Notification**
     - `GET /api/notifications`: Retrieve notifications for the logged-in user. (Requires authorization header)
-    - `DELETE /api/notifications/{notificationId}`: Delete a notification for the logged-in user. (Requires authorization header)
+    - `DELETE /api/notifications/{notificationId}`: Delete a notification for the logged-in user. (Requires
+      authorization header)
 
 9. **Follow**
     - `POST /api/follows/{userId}`: Follow a user as logged-in user. (Requires authorization header)

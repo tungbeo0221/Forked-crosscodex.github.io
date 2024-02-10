@@ -1,12 +1,3 @@
-@echo off
-
-:: Source .env or .env.local file if it exists
-if exist "%~dp0\.env.local" (
-    call "%~dp0\.env.local"
-) else if exist "%~dp0\.env" (
-    call "%~dp0\.env"
-)
-
 @REM ----------------------------------------------------------------------------
 @REM Licensed to the Apache Software Foundation (ASF) under one
 @REM or more contributor license agreements.  See the NOTICE file

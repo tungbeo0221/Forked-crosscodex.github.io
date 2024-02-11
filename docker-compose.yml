@@ -1,0 +1,52 @@
+# Container definitions for development
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+    restart: unless-stopped
+  
+  # # Optional phpmyadmin container for database monitoring and troubleshooting
+  # phpmyadmin:
+  #   image: phpmyadmin:latest
+  #   container_name: phpmyadmin
+  #   ports:
+  #     - "8040:80"
+  #   environment:
+  #     PMA_HOST: mysql
+  #     MYSQL_ROOT_PASSWORD: root_password
+  #   restart: unless-stopped
+
+  backend:
+    image: eclipse-temurin:latest
+    container_name: backend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend:/app
+    working_dir: /app
+    environment:
+      DB_URL: jdbc:mysql://mysql:3306/tmp?createDatabaseIfNotExist=true
+      DB_USERNAME: root
+      DB_PASSWORD: root_password
+    command: "./gradlew bootRun"
+    depends_on:
+      - mysql
+    restart: unless-stopped
+
+  frontend:
+    image: node:latest
+    container_name: frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+    working_dir: /app
+    command: sh -c "npm install && npm run devc"
+    restart: unless-stopped
+
+

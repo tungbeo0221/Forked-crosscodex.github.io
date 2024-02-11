@@ -2,8 +2,7 @@
 
 current_script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 
-HOST='dat267.dev.db.mooo.com'
-# HOST=$(terraform output --state="$current_script_dir/.terraform/terraform.tfstate" --json | jq --raw-output .core_ip.value)
+HOST=$(terraform output --state="$current_script_dir/.terraform/terraform.tfstate" --json | jq --raw-output .core_ip.value)
 PORT='3306'
 USER='root'
 PASSWORD=$(cat "$current_script_dir/db.password")

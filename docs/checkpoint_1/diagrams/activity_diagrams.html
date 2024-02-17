@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Activity Diagrams</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h3 id="activity-diagrams">Activity Diagrams</h3>
+<h4 id="use-case-uc-1-sign-up">Use Case UC-1: Sign Up</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/NP1DYiCm38NtFeNeAbtDtbbCeTD5TmEb1p2EaegnvI0vPG8vV1ttXzADPQFlFVbffzb9dc8morbH5bFVnlvAkbA783YGPd6P4WDndrfZzu7y7snED32SnqrhbjEi6UDYg8VcM22uka3TznRo1HcQ6NLh0DRkuR_O4GymbMcV080zY2InyC8mEWfVAymkObiXpMai5moAq71wAFU2BYCuxzF4-KxQ7z8nk1bqyXvL8PR33Hy-t55ltjsUlpXopL5pIwmxM9LLTrVjIbcNTmC0"><h4 id="use-case-uc-2-sign-in">Use Case UC-2: Sign In</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/PP1BRi9038RtSufVhC8LaWLKY0LILqKSO3JZf5O7J-Hna91o-EPH90ehF__FZtqnhpPSanilXNHqI-pgenWfWb8aCVQfDAu-90u_s9ov4vnaqxZnV2z6rz5nY-gGLIdOisQtXNsJeBfJsJfWRli88GzYyC7uHgyTGFsPEmpJAc1frimNHLxGbj5hRZaHUj_HMYwM-ycXL0YLv3_AKJLhZSUqICiyRnIH5MKeFKca-1yXaLlt37fWJXBUhvkrYtBLxISp__4N"><h4 id="use-case-uc-3-view-profile">Use Case UC-3: View Profile</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/HOyz2iCm38Ltdq9RaoiaGxDqw59AImzW4ZaLEBQHv430XsyQqdGIZ_VpeKxKikR9c_8Iv68sRPgRdMcqYg0H4aT77Y7P4LjJdeieJiMGW-g-MupAX3CE8BdlKSHbxvTp3Vh60DM2KXk0vh77m8O11fBaxG9vvPxae51maIUh54ExTaHZCkW5eGfn6xamHsxWAf8FC8NnD_0lXO6SwTRpVUy3"><h4 id="use-case-uc-4-create-post">Use Case UC-4: Create Post</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/HOx12i9044FlynKvjhzG3nR4gmZ53rZSAIwqEylCM2ZinrjRmLD8U0dfpOFwUvweFeorqkwfkoW7PnGnFr4TLdEUAwKHpNsBy9Jid1r5PKcHuxc5lpYZMTbQ0heXB4SR8KV4P6KAAz8s1fXB8PwCqMJPwQkgQ8UR79NV-f_DCOtKR_8z-W40"><h4 id="use-case-uc-5-search">Use Case UC-5: Search</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/TKyx3e904Etd55F25PP22YciYGT066IJPS7vc6ooXnTH6XEhb_TDNYtQiTeS85-5ECFEmJLHYL6eutx2Xn6d2bnhjzdhZvhR94fp1ZzYqNui9h6Wig6ofoSDADRt939Q2EbKeauKiKWa9I2wivSrTEaO_hQhpH9TLg0WX4LSzcp3lB33YuZHiU_Z_Myt3dw4UeFtHtW1"><h4 id="use-case-uc-6-view-notifications">Use Case UC-6: View Notifications</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/TO_12i8m44Jl-nLxR7-X7kp5WvSU53yW99kwa2Obkoa4yl5gKH31qp3CF8OPHKtMiWHeDw7SOFSmJ6RZsIYX9en9sRCroYdA0TgrYjBIW3rsqtU6cJGpRUHGYhKauai8zTYZtYbYLqbwG1mkxngQwD2nhC7KtnL4qRG21I7iOjgvKyuf3tWMAVJPuZZ_GwDZ3-DJNlVW0G00"><h4 id="use-case-uc-7-follow-user">Use Case UC-7: Follow User</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/LP112i9034NtEKLmOxr2kr0G1JTkn0FKCQE3SL8c6QNGmzkfYhXAmlzv-MIbrYRBTuRXg9G6c6Qez-qZN5eZDC4y2dF5BeaFJ0tKQmxkXhEjCCjpXgTi9h61uT2hqNs0uB5wYzWw2nBBhYDLEgDcLpgVcVlb0krA4QkUT068TOdmvq0_ORJuK8d9sSWeWPhHhoOT42jX5MK2R5AILEDEDTFtQ8YN3-QJvhSQpy73QYpb0V02"><h4 id="use-case-uc-8-unfollow-user">Use Case UC-8: Unfollow User</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/LP0n3i8m34Ltdy9YeRr2Eu2465XOK0zGWWCH9aQn0whKmzEW0cAohU___EMrMfyitnZ6JYcDy9wXsVUFSEwDq0Jp92mLxqbyO6gXsN1mLrnqqGkpF1Tup6OIMnWFWnhTHWWUgu-ClRCWiVWTgT89DRlI-Smyh6gq2qMi1j8Q49iIusy3ympIiebAJCucIedLJWurkGEn4bPHteXjIf8QtAbc-fmDyVm5pOb-vdWA7jPJAO-05m00"><h4 id="use-case-uc-9-update-profile">Use Case UC-9: Update Profile</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/JP31RiCm28RlF0MtfQ-G75Qfss67xLBr0L22KpJ7jWok52aFFpjggbr0YE-77yvgbAqi7hQRSjvWhw7_eOVCP8mMCUNen3Fo92PXnaGp3z1_qo_ZUASmi_x79BYO5pA9eL9NUhoe0RRhgiRB1kAmkporMf49jOmZgxhY_Vf-Ghjpm6vbFG5YVqjJCrEgnJSzDWsjyo6QFAs779SQTd-8QZ41UsNiGjp7VEOSSuzVgeNRsdRDoziX29CuEDVKlW9_"><h4 id="use-case-uc-10-view-post">Use Case UC-10: View Post</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/NKvB2i8m5Do_KyoolK9Ts8qBDoAA1mZDQmsaISbxAGHoU6kf6rV33FFhHKtIF7kgB-5KQUVKtSpg9gCCZLYYw8dgiuZoNCcDQEwRXCIQ7Azi8NaOM6JCtfTp2trpG5DOMWAwns632HRMoU9DEJe1qRWGUs4q8UxsIqenTRYAPFvDk33z9O9r8_KRVA_J1m00"><h4 id="use-case-uc-11-edit-post">Use Case UC-11: Edit Post</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/JOyn3eCm34Ltdy9YWYlGeKYKeKEx80uGWO68aA3O825n-2PKg5riFzjVtovOb9TrDd0qJFw0ao5_gqqFIWZ5eOo4YsE9DNLQRf2NHhSJ9bMW9E1BJOJjgEn07B1MsnyUzSv2ym6wnxJyTf73IeUyjYqnzwin-psBHXRJdJW3nBnPkdX0TBv5VcXUZDel4SuXg87YZCKjG8O9K-jESUMzypa-cLUAPjeEluikWUrq3qL8yN_u0000"><h4 id="use-case-uc-12-delete-post">Use Case UC-12: Delete Post</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/FKzB3e903Dtt50qhk08i914NRepHU80959mu7p8j99DmU1b0DsrVs_TUMxEe89CriBoOmW8RXlAcPZqe8HIFyYOSFKkgEp8aL45vDhhzODPiE4iDxteTxBwXlQjWUKOMiWle7lDx4j1y27J8KziISpyP4qz5yd2OH-824Ci7MJ_lfbN2ZURHgFWZeLs36YZDMFm8P9WmTtuZNqBmeSGhyqJ7DMxuQ-txhjCzr6jAdyCN"><h4 id="use-case-uc-13-comment-on-post">Use Case UC-13: Comment on Post</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/HL2x3eCm3Dpz5HxX5s0eLSlGfKlL3qY9eP7oGB5J2IaVNu9AcNm---uiTomgId8MyfCfPjXwQExgOoObX19GteHpO2bu2CwH5mo-XQRtGd6drlwHNix8GUJ7ma8kWncnkloKXf6tFI6zec4WvZ5PkvpgakInMeXhG6pEMl_prkXoGblug-7PgWNJh5KnsGSiOGQoJ5Zvi3dqCOROu8qvqPvg_7HSk8kyDYDqQocVW2y0"><h4 id="use-case-uc-14-edit-comment">Use Case UC-14: Edit Comment</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/JL0x3i8m3Drz2ekfNA4C81K61bWG1x1IjqJaKyKkKgKUdgIe5OkjzvDVSXAbfADtC3-5qmmBXlfE7zkJCcf4VJ4EKHHD34essD0ld8dUSz1YuTRg0Ue7EpQw2fbed3Llt5solClmHkySUr7eMOgTFdzmVaoYx6Um7LRDZqLAZ99jBSfe38jqetFJSLyA1AmcbZqWri-XBMMtmvawMnaSJMiEVHxKSz54um3iXB4ASSbVKegfngl8kDmhJzoAhO7GsWvEUPNlWYy0"><h4 id="use-case-uc-15-delete-comment">Use Case UC-15: Delete Comment</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/HL0nRiCm3Dpv2YAJymLxQ82aGvSE3Ve0GQPSeP9eY7G00tvy9TLE5egwuvsEkeYQh4iCi7qBvGtQ7VfFy_2JKK9br1_2cKNHSbBZaqzJmop7I4dho4Y1b0RexwMnUb05k0PlV_5qQmEd2d1oFiT_YUSqm7PVHIbku1rsrztKosuweYpMaeXRGbZVplNfXDrASWR4_eiYFrvPNEROmWwLl7cPWraF1uobc8ag9yepK132Bd5pUi-PSuyV8WljwSgYpqqEIHgzWqivwgV17m00"><h4 id="use-case-uc-16-react-to-post">Use Case UC-16: React to Post</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/RL0n3eCm3Dpz2e_m1HXAXmvTEXJn04eCH0e9Yaqh91vV7BKLGoUVp_RToHLB6sMP76mDKzmWzL3SsgSTMY6KW38Ipe55SQIsKr12KPEZ7IV61g_CyfZiaTdgbOMc3MoFsVr3esNaj2baTjHrnDmlpgsdNBqyPYjn3eZ5sPYVchfhYb87pMmqN4hriZ8UF15PmWpac33p8UbSOWonm2lpGbzlwuS_LzxO7ggzw4lW3G00"><h4 id="use-case-uc-17-remove-reaction">Use Case UC-17: Remove Reaction</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/PL0nRiCm3Dpv2exE5-oX0OeENJgao0DKcKw8og91KYaC-F6rr3OPEXr8tXsFF9e7zJ8dsCv6ka6heNyBDxu49tH1ln8kOevHiWVEd2-rnufA8JfB7g1_JXm_xmtyAEuxx6gbMMuqmFQ-cjEy0K_OdVvuRB-44Qt4I6PJIMbzEjGD6RkLx028_QcH7lwJojn23NLwNiQQjONyOhzAyRlj8oEYkIn0oGYxBCttHLMqnrUpGZ-IUjr_JHvvWkCEzLNm3G00"><h4 id="use-case-uc-18-send-message">Use Case UC-18: Send Message</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/PP0nRiCm34LtdeB84kSApf00QOSEpMBq0892EqHbIH2f0WPy-59fWXJ89F3pwtsIHr5NjCu1rY-XiiAjXlxiVdXoIgW9Pn9n4yS9XRnoYfWALdDl1ND98mVQGpzGi2uMyfoPeffqIdDEGdT0Cvq2-s_S31Glcpsimo9AymeyOlVvPq8MYucAKhqtQQmXB8STwfKYTWl93X3x1dXWsuZ_KgtxnfA3Mnw8PpwYQCf0mORgOhgXtaj9fSSFaKej-T8MVVbXyWX7Uzgfu1S0"><h4 id="use-case-uc-19-view-messages">Use Case UC-19: View Messages</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/PO-z2i9048JxVOhfZAyG2osqiD16V80ZsSI3ovtSx0K2UNZZ3o9OxGoxyp6xexbiPGWoNwbvbfUN-kn6tpjJMCAWfEjzx45jpAUuaVaoqNIOfNuBPBNiTLJ2nHQjvpsuYIWBSyKFGRaHtw4wVHnSrc-m1KlJB9kkX31jrx2RHbIJSYr0lNyJVqW0BTr50nLLJA-hGyufrpYIvKj-zlvFnTPtibl6ytLv0000"><h4 id="use-case-uc-20-edit-message">Use Case UC-20: Edit Message</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/JL0xpi8m3Dvz2ekfNA7_018mCF0lY0DOgLiiqgIAtKgLUdYIeY8cwtlvTLIZP6FlONaefmLM3FK_JTAHCLf45yF4ISaaXWAC94Zei6TLwbOBDs9_KD_PixDDoCJ9YtlXxfBbNOOtUZ6w9uMEjTXf-e7BVLRZVW5fiJfzMAJ4gDdMe8xEvRxjwFrysACzEM0ri-u1iNuCJLdsEpXJPz71qxpbVZMrE01xPQn2NFENb6AgyQewhlFAUT_5ja1ef8LZBkLTy0O0"><h4 id="use-case-uc-21-delete-message">Use Case UC-21: Delete Message</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/LP0nRiCm34LtdeAZSmLxQ82aGuTsg94323Rb4f34GAGD6F3X8pjEZ4uKlpuVltHMSzd6662vAUK5jXxg7pVnu8pG13j94sLrnfBMnXmdJWD6KdN3Pkafa543TLiEdRskYd2Hv3d7fwC06bZQMOtY0kon-juPh3kZHnsxhgX-367-EA7zKS9g9Zq1OlrBKIPwh_PPuhzypMgwijw3cr-a8msYcjo1WX9MIJRYPywIQ_nI7MbFURpj64azUpYNiluLF000"><h4 id="use-case-uc-22-delete-notification">Use Case UC-22: Delete Notification</h4>
+
+<img style="background-color:#FFF;" src="https://www.plantuml.com/plantuml/svg/LL0n3i8m3Dpz2e_j5ye04Z2mC81uGDGwnL8IezX5gjJ7aq8HTB7bEz_vv9sQopR40DDDAK_mdg4vkoVtpWXDC8cnvzOPIyB0QXjehXIejJLLLhi26nL-BybpZX-Wa1kOhgCQnGdOOtN-rx4kkWvrQ5jIzKC8uxP6krF2QYIj0R6vK9GdhM_wB779L3OEh8_WngyDnb9SJpEd9W-We8HLahVTCMV93PvK1rfofdxb_jEbZZtiIfi_1Iy0">
+            
+            
+        </body>
+        </html>

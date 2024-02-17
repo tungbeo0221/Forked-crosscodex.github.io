@@ -1,60 +1,58 @@
 ---
-title: Description of Features
-subtitle: Preliminary feature documentation
-author: Students
+title: Feature Description
+subtitle: Overview of Key Features
 date: 2024-02-10
 ---
 
-## 1. Authentication
+# Feature Description
 
-The authentication feature enables users to securely sign up and sign in to the social media platform. Frontend
-components would include user registration forms for signing up (`/signup`) and login forms (`/signin`). Upon successful
-authentication, users receive an authorization token.
+Web Application Idea - Social Media Platform for Developers
 
-## 2. User Management
+## Authentication
 
-Users can manage their profiles seamlessly through the frontend interface. They can view profile information and posts
-on their profile page (`/profile/{userId}`). Additionally, they can update their profile information through an editable
-profile form (`/profile/edit`) and delete their account with a delete account option (`/profile/delete`).
+- **Sign Up and Sign In**: Users can securely create accounts and log in to access the platform's features.
+- **User Authorization**: Successful authentication generates authorization tokens, granting users access to protected resources.
 
-## 3. Post Management
+## User Management
 
-This feature empowers users to create, view, edit, and delete posts directly from the frontend. Users can compose new
-posts using a post creation form (`/post/create`) and view posts and their comments on the feed or post detail
-page (`/feed`, `/post/{postId}`). Editing options are available through an edit post button (`/post/{postId}/edit`) and
-delete functionality via a delete post option (`/post/{postId}/delete`).
+- **Profile Viewing**: Users can view profiles of other users and browse their associated posts.
+- **Profile Editing**: Provides users with the ability to update their profile information using an intuitive interface.
+- **Account Deletion**: Allows users to permanently delete their account and associated data from the system.
 
-## 4. Commenting
+## Post Management
 
-Users can engage with posts by leaving comments using the frontend comment form displayed on post detail
-pages (`/post/{postId}`). They can also edit their comments by clicking on an edit button next to their comments and
-delete them using a delete option.
+- **Creation**: Users can create new posts to share content with the community.
+- **Viewing**: Allows users to read and interact with posts and their associated comments.
+- **Editing and Deletion**: Enables users to modify or remove their own posts as needed.
 
-## 5. Search
+## Commenting
 
-The search feature provides users with a search bar on the frontend interface (`/search`) to discover other users and
-posts based on their query. Search results are displayed dynamically as users type their query.
+- **Engagement**: Users can interact with posts by leaving comments to provide feedback or start discussions.
+- **Editing**: Provides the capability to edit comments for correction or improvement.
+- **Deletion**: Allows users to delete their comments to manage content they've contributed.
 
-## 6. Reaction
+## Search
 
-Users can express their reactions to posts directly from the frontend interface. Each post may have reaction buttons (
-like, love, laugh, etc.) allowing users to react with a single click. They can also remove their reactions by clicking
-on the respective reaction button again.
+- **Discoverability**: Enables users to search for specific users or posts based on keywords or criteria.
+- **Real-Time Results**: Search results update dynamically as users type, providing instant feedback.
 
-## 7. Messaging
+## Reaction
 
-Messaging functionality is seamlessly integrated into the frontend interface, allowing users to communicate with each
-other. Users can send messages through a messaging interface (`/messages`) where they can view their conversations,
-compose new messages, and delete messages.
+- **Expressiveness**: Users can express their feelings or opinions on posts through reactions.
+- **Ease of Use**: Reactions are easily applied with a single click, simplifying user interaction.
+- **Undo Option**: Allows users to retract their reaction if they change their mind, enhancing user control.
 
-## 8. Notification
+## Messaging
 
-Users receive real-time notifications about relevant activities through the frontend interface. Notifications are
-displayed in a notification panel (`/notifications`), providing users with updates on new followers, likes, comments,
-and more. Users can dismiss notifications individually or clear all notifications.
+- **Communication**: Facilitates seamless communication between users through private messages.
+- **Conversation Management**: Users can manage their message exchanges, including composing, editing, and deleting messages.
 
-## 9. Following
+## Notification
 
-Users can follow other users directly from their profiles or from search results. A follow button is displayed next to
-user profiles or within search results, allowing users to follow with a single click. Unfollowing can be done in a
-similar manner.
+- **Stay Informed**: Keeps users informed about important platform activities and updates in real-time.
+- **Notification Management**: Allows users to manage their notifications by dismissing individual alerts or clearing all notifications at once.
+
+## Following
+
+- **Connection**: Users can follow other users to stay updated on their activities and contributions.
+- **Discover New Content**: Following other users helps users discover new and interesting content within the platform.

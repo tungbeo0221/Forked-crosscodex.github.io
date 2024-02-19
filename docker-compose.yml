@@ -22,7 +22,7 @@ services:
   #   restart: unless-stopped
 
   backend:
-    image: eclipse-temurin:latest
+    image: gradle:latest
     container_name: backend
     ports:
       - "8080:8080"
@@ -33,7 +33,7 @@ services:
       DB_URL: jdbc:mysql://mysql:3306/tmp?createDatabaseIfNotExist=true
       DB_USERNAME: root
       DB_PASSWORD: root_password
-    command: "./gradlew bootRun"
+    command: gradle bootRun
     depends_on:
       - mysql
     restart: unless-stopped

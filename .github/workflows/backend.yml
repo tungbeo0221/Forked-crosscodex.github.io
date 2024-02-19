@@ -1,0 +1,23 @@
+jobs:
+  deploy_to_cloud_run:
+    steps:
+      - id: 'auth'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v2'
+
+      - name: 'Build and push Docker image'
+        run: |
+          gcloud builds submit --tag gcr.io/$PROJECT_ID/$IMAGE_NAME --dir backend
+
+      - name: 'Deploy to Cloud Run'
+        run: |
+          gcloud run deploy $SERVICE_NAME --image gcr.io/$PROJECT_ID/$IMAGE_NAME --platform managed --region $REGION
+        env:
+          PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+          IMAGE_NAME: devhub
+          SERVICE_NAME: devhub
+          REGION: asia-southeast1

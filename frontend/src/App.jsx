@@ -9,7 +9,7 @@ function App () {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/devhub" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="signup" element={<SignUpForm />} />
           <Route path="signin" element={<SignInForm />} />

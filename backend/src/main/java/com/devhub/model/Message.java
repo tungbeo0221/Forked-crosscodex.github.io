@@ -1,4 +1,4 @@
-package codecollide.devhub.model;
+package com.devhub.model;
 
 public class Message {
   private String content;
